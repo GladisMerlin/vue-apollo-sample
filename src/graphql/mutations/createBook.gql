@@ -1,0 +1,12 @@
+mutation (
+    $bookName: String!
+    $author: Int!
+) {
+    addBook(
+        name: $bookName
+        authorId: $author
+    ) {
+        id
+        name
+    }
+  }

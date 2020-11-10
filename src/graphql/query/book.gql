@@ -1,0 +1,13 @@
+query(
+    $id: Int!
+){
+  book(id: $id)
+  {
+    id
+    name
+    author{
+      id
+      name
+    }
+  }
+}
